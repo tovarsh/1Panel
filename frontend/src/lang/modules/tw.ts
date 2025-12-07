@@ -2121,6 +2121,7 @@ const message = {
         huaweicloud: '華為雲',
         rainyun: '雨雲',
         westCN: '西部數據',
+        porkbun: 'Porkbun',
     },
     php: {
         short_open_tag: '短標籤支援',

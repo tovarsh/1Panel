@@ -33,7 +33,7 @@
                             {{ $t('ssl.cfHelper') }}
                         </span>
                     </el-form-item>
-                    <div v-if="account.type === 'AliYun' || account.type === 'HuaweiCloud'">
+                    <div v-if="account.type === 'AliYun' || account.type === 'HuaweiCloud' || account.type === 'Porkbun'">
                         <el-form-item label="Access key" prop="authorization.accessKey">
                             <el-input v-model.trim="account.authorization['accessKey']"></el-input>
                         </el-form-item>

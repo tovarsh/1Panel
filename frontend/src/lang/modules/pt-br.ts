@@ -2286,6 +2286,7 @@ const message = {
         huaweicloud: 'Huawei Cloud',
         rainyun: 'Rain Yun',
         westCN: 'West CN',
+        porkbun: 'Porkbun',
     },
     php: {
         short_open_tag: 'Suporte para short tags',

@@ -2200,6 +2200,7 @@ const message = {
         huaweicloud: '화웨이 클라우드',
         rainyun: '레인윤',
         westCN: 'West CN',
+        porkbun: 'Porkbun',
     },
     php: {
         short_open_tag: '짧은 태그 지원',

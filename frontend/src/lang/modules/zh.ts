@@ -2122,6 +2122,7 @@ const message = {
         huaweicloud: '华为云',
         rainyun: '雨云',
         westCN: '西部数码',
+        porkbun: 'Porkbun',
     },
     php: {
         short_open_tag: '短标签支持',
