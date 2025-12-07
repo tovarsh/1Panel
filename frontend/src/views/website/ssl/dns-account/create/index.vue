@@ -33,13 +33,16 @@
                             {{ $t('ssl.cfHelper') }}
                         </span>
                     </el-form-item>
-                    <div v-if="account.type === 'AliYun' || account.type === 'HuaweiCloud'">
+                    <div v-if="account.type === 'AliYun' || account.type === 'HuaweiCloud' || account.type === 'Porkbun'">
                         <el-form-item label="Access key" prop="authorization.accessKey">
                             <el-input v-model.trim="account.authorization['accessKey']"></el-input>
                         </el-form-item>
                         <el-form-item label="Secret key" prop="authorization.secretKey">
                             <el-input v-model.trim="account.authorization['secretKey']"></el-input>
                         </el-form-item>
+                        <span class="input-help" v-if="account.type === 'Porkbun'">
+                            {{ $t('ssl.porkbunHelper') }}
+                        </span>
                     </div>
                     <el-form-item label="Region" prop="authorization.region" v-if="account.type === 'HuaweiCloud'">
                         <el-input v-model.trim="account.authorization['region']" :placeholder="'cn-north-1'"></el-input>

@@ -2289,6 +2289,7 @@ const message = {
         huaweicloud: 'Huawei Cloud',
         rainyun: 'Rain Yun',
         westCN: 'West CN',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: 'Sokongan tag pendek',
@@ -2393,6 +2394,7 @@ const message = {
         httpHelper2: 'Tidak dapat memohon sijil nama domain generik dalam mod HTTP',
         skipDNSCheck: 'Langkau semakan DNS',
         skipDNSCheckHelper: 'Semak di sini hanya jika anda menghadapi isu tamat masa semasa permintaan pengesahan.',
+        porkbunHelper: 'Gunakan API Key dan Secret API Key PorkBun (apikey/secretapikey) daripada tetapan DNS API.',
         cfHelper: 'Jangan gunakan Global API Key',
         deprecated: 'akan dihentikan',
         deprecatedHelper:

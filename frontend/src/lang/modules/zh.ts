@@ -2122,6 +2122,7 @@ const message = {
         huaweicloud: '华为云',
         rainyun: '雨云',
         westCN: '西部数码',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: '短标签支持',
@@ -2221,6 +2222,7 @@ const message = {
         httpHelper2: 'HTTP 模式无法申请泛域名证书',
         skipDNSCheck: '跳过 DNS 校验',
         skipDNSCheckHelper: '如果出现申请超时问题，请勾选此处，其他情况请勿勾选',
+        porkbunHelper: '使用 PorkBun DNS API 设置中的 API Key 与 Secret API Key（apikey/secretapikey）。',
         cfHelper: '请勿使用 Global API Key',
         deprecated: '即将废弃',
         deprecatedHelper: '已经停止维护，可能会在以后的某个版本废弃，请使用腾讯云方式解析',

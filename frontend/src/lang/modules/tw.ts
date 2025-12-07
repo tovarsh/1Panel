@@ -2121,6 +2121,7 @@ const message = {
         huaweicloud: '華為雲',
         rainyun: '雨雲',
         westCN: '西部數據',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: '短標籤支援',
@@ -2220,6 +2221,7 @@ const message = {
         httpHelper2: 'HTTP 模式無法申請泛網域憑證',
         skipDNSCheck: '跳過 DNS 校驗',
         skipDNSCheckHelper: '如果出現申請超時問題，請勾選此處，其他情況請勿勾選',
+        porkbunHelper: '請使用 PorkBun DNS API 設定中的 API Key 與 Secret API Key（apikey/secretapikey）。',
         cfHelper: '請勿使用 Global API Key',
         deprecated: '即將廢棄',
         deprecatedHelper: '已經停止維護，可能會在以後的某個版本廢棄，請使用騰訊雲方式解析',

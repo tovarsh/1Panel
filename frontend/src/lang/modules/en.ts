@@ -2266,6 +2266,7 @@ const message = {
         huaweicloud: 'Huawei Cloud',
         rainyun: 'Rain Yun',
         westCN: 'West CN',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: 'Short tag support',
@@ -2370,6 +2371,7 @@ const message = {
         httpHelper2: 'Unable to apply for a generic domain name certificate in HTTP mode',
         skipDNSCheck: 'Skip DNS check',
         skipDNSCheckHelper: 'Check here only if you encounter a timeout issue during certification request.',
+        porkbunHelper: 'Use PorkBun API Key and Secret API Key (apikey/secretapikey) from DNS API settings.',
         cfHelper: 'Do not use Global API Key',
         deprecated: 'will be deprecated',
         deprecatedHelper:

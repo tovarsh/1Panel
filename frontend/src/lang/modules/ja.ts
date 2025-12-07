@@ -2239,6 +2239,7 @@ const message = {
         huaweicloud: 'huaweiCloud',
         rainyun: 'Rain Yun',
         westCN: 'West CN',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: '短いタグサポート',
@@ -2341,6 +2342,7 @@ const message = {
         httpHelper2: 'HTTPモードで一般的なドメイン名証明書を申請できません',
         skipDNSCheck: 'DNSチェックをスキップします',
         skipDNSCheckHelper: '認定リクエスト中にタイムアウトの問題が発生した場合にのみ、こちらを確認してください。',
+        porkbunHelper: 'PorkBunのDNS API設定からAPI KeyとSecret API Key（apikey/secretapikey）を使用してください。',
         cfHelper: 'グローバルAPIキーを使用しないでください',
         deprecated: '非推奨されます',
         deprecatedHelper:

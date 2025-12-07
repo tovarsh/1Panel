@@ -28,6 +28,7 @@ import (
 	"github.com/go-acme/lego/v4/providers/dns/namecheap"
 	"github.com/go-acme/lego/v4/providers/dns/namedotcom"
 	"github.com/go-acme/lego/v4/providers/dns/namesilo"
+	"github.com/go-acme/lego/v4/providers/dns/porkbun"
 	"github.com/go-acme/lego/v4/providers/dns/tencentcloud"
 	"github.com/go-acme/lego/v4/providers/dns/volcengine"
 	"github.com/go-acme/lego/v4/providers/http/webroot"
@@ -87,6 +88,7 @@ const (
 	HuaweiCloud  DnsType = "HuaweiCloud"
 	RainYun      DnsType = "RainYun"
 	WestCN       DnsType = "WestCN"
+	Porkbun      DnsType = "Porkbun"
 )
 
 type DNSParam struct {
@@ -244,6 +246,14 @@ func (c *AcmeClient) UseDns(dnsType DnsType, params string, websiteSSL model.Web
 		westcnConfig.PollingInterval = pollingInterval
 		westcnConfig.TTL = ttl
 		p, err = westcn.NewDNSProviderConfig(westcnConfig)
+case Porkbun:
+porkbunConfig := porkbun.NewDefaultConfig()
+porkbunConfig.APIKey = strings.TrimSpace(param.AccessKey)
+porkbunConfig.SecretAPIKey = strings.TrimSpace(param.SecretKey)
+		porkbunConfig.PropagationTimeout = propagationTimeout
+		porkbunConfig.PollingInterval = pollingInterval
+		porkbunConfig.TTL = ttl
+		p, err = porkbun.NewDNSProviderConfig(porkbunConfig)
 	}
 	if err != nil {
 		return err
@@ -255,7 +265,11 @@ func (c *AcmeClient) UseDns(dnsType DnsType, params string, websiteSSL model.Web
 	if websiteSSL.Nameserver2 != "" {
 		nameservers = append(nameservers, websiteSSL.Nameserver2)
 	}
-	if websiteSSL.DisableCNAME {
+	disableCNAME := websiteSSL.DisableCNAME
+	if dnsType == Porkbun {
+		disableCNAME = true
+	}
+	if disableCNAME {
 		_ = os.Setenv("LEGO_DISABLE_CNAME_SUPPORT", "true")
 	} else {
 		_ = os.Setenv("LEGO_DISABLE_CNAME_SUPPORT", "false")

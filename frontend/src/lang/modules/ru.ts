@@ -2286,6 +2286,7 @@ const message = {
         huaweicloud: 'Huawei Cloud',
         rainyun: 'Rain Yun',
         westCN: 'West CN',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: 'Поддержка коротких тегов',
@@ -2389,6 +2390,7 @@ const message = {
         httpHelper2: 'Невозможно запросить сертификат общего домена в режиме HTTP',
         skipDNSCheck: 'Пропустить проверку DNS',
         skipDNSCheckHelper: 'Отметьте здесь только если возникает проблема тайм-аута при запросе сертификата.',
+        porkbunHelper: 'Используйте PorkBun API Key и Secret API Key (apikey/secretapikey) из настроек DNS API.',
         cfHelper: 'Не использовать Global API Key',
         deprecated: 'будет устарелым',
         deprecatedHelper:

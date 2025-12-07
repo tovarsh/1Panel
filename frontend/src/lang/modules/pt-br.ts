@@ -2286,6 +2286,7 @@ const message = {
         huaweicloud: 'Huawei Cloud',
         rainyun: 'Rain Yun',
         westCN: 'West CN',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: 'Suporte para short tags',
@@ -2391,6 +2392,7 @@ const message = {
         skipDNSCheck: 'Pular verificação DNS',
         skipDNSCheckHelper:
             'Marque esta opção apenas se enfrentar problemas de timeout durante a solicitação de certificação.',
+        porkbunHelper: 'Use a API Key e a Secret API Key da PorkBun (apikey/secretapikey) nas configurações da API DNS.',
         cfHelper: 'Não use a Global API Key',
         deprecated: 'será descontinuado',
         deprecatedHelper:

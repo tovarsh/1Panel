@@ -2200,6 +2200,7 @@ const message = {
         huaweicloud: '화웨이 클라우드',
         rainyun: '레인윤',
         westCN: 'West CN',
+        porkbun: 'PorkBun',
     },
     php: {
         short_open_tag: '짧은 태그 지원',
@@ -2300,6 +2301,7 @@ const message = {
         httpHelper2: 'HTTP 모드에서 일반 도메인 이름 인증서를 신청할 수 없습니다.',
         skipDNSCheck: 'DNS 확인 건너뛰기',
         skipDNSCheckHelper: '인증 요청 중 타임아웃 문제가 발생할 경우에만 선택하세요.',
+        porkbunHelper: 'PorkBun DNS API 설정에서 API Key와 Secret API Key(apikey/secretapikey)를 사용하세요.',
         cfHelper: 'Global API Key 를 사용하지 마세요.',
         deprecated: '더 이상 지원되지 않습니다.',
         deprecatedHelper:
